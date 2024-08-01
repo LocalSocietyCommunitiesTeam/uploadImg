@@ -1,1 +1,166 @@
-style
+/* 画面個別CSS */
+body {
+    position: relative;
+    background-color: #F2FAF9;
+}
+
+/* ローダー */
+.pt_loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #939393;
+}
+
+.pt_loader_hidden {
+    display: none;
+}
+
+/* ヘッダー */
+header {
+    padding: 24px 20px;
+}
+
+/* メイン */
+.pt_uploadSec {
+    padding: 0 20px;
+}
+
+.pt_imgArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    border: 1px dashed #2E2E2E;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.pt_preImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #D5D5D5;
+}
+
+.pt_uploadImg {
+    display: block;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* ボタンエリア */
+.pt_btnArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.pt_btnArea>*:last-child {
+    margin-top: 24px;
+}
+
+/* アップロードボタン */
+.pt_button01_green {
+    background-color: #008673;
+    border: 3px solid #008673;
+}
+
+.pt_button01_white {
+    background-color: #FFFFFF;
+    border: 3px solid #008673;
+}
+
+.pt_button01_disabled {
+    background-color: #D5D5D5;
+    border: 3px solid #D5D5D5;
+    pointer-events: none;
+}
+
+.pt_button01_disabled p {
+    color: #939393;
+}
+
+.pt_button01 input {
+    display: none;
+}
+
+.pt_button01 input+label {
+    display: block;
+    height: 100%;
+}
+
+.pt_button01_wrapper p {
+    flex-grow: 1;
+}
+
+.pt_button01 {
+    width: 280px;
+    height: 56px;
+    border-radius: 24px;
+}
+
+.pt_button01_disabled .pt_button01_icon_primary {
+    padding-right: 24px;
+}
+
+.pt_button01_wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+}
+
+.pt_button01_icon_not,
+.pt_button01_icon_link {
+    padding-right: 21px;
+}
+
+.pt_button01_icon_primary {
+    padding-right: 5px;
+}
+
+.pt_button01_disabled .pt_button01_icon_primary .pt_button01_icon {
+    display: none;
+}
+
+.pt_button01_icon_primary svg {
+    width: 48px;
+    height: 48px;
+}
+
+.pt_button01_icon_link svg {
+    width: 24px;
+    height: 24px;
+}
+
+.pt_button01_icon_link .pt_button01_icon,
+.pt_button01_icon_primary .pt_button01_icon {
+    padding-left: 4px;
+}
+
+.pt_button01_white:not(.pt_button01_disabled) .pt_button01_icon_link .pt_button01_icon .pt_button01_icon_upload path {
+    fill: #008673;
+}
+
+.pt_button01_disabled .pt_button01_icon_link .pt_button01_icon_upload path {
+    fill: #939393;
+}
+
+.pt_button01_green:not(.pt_button01_disabled) .pt_button01_icon_link .pt_button01_icon .pt_button01_icon_upload path {
+    fill: #FFFFFF;
+}
+
+/* 非表示用クラス */
+.pt_hiddenFlg {
+    display: none;
+}
