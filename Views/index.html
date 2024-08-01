@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像アップロード｜プロトタイプ</title>
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="../upload_files/p_css/reset_MYEFXXXX.css">
+    <link rel="stylesheet" href="../upload_files/p_css/components_MYEFXXXX.css">
+    <!-- 画面個別CSS -->
+    <link rel="stylesheet" href="../upload_files/p_css/style.css">
+</head>
+
+<body>
+    <!-- ローダー -->
+    <div class="pt_loader pt_loader_hidden">
+        <p class="c_typo_headerL c_typo_BLK10">アップロード中・・・</p>
+    </div>
+
+    <!-- ヘッダー -->
+    <header>
+        <p class="c_typo_headerM c_typo_BLK10 c_typo_align_center">画像アップロード｜プロトタイプ</p>
+    </header>
+
+    <!-- メイン -->
+    <main>
+        <!-- アップロードセクション -->
+        <section class="pt_uploadSec">
+            <!-- 画像エリア -->
+            <div class="pt_imgArea">
+                <div class="pt_preImg">
+                    <p class="c_typo_headerM c_typo_BLK8">未アップロード</p>
+                </div>
+                <img class="pt_uploadImg pt_hiddenFlg" id="pt_uploadImg">
+            </div>
+
+            <div id="pt_canvasArea"></div>
+
+            <!-- ボタンエリア -->
+            <div class="pt_btnArea">
+                <!-- アップロードボタン -->
+                <div class="pt_button01 pt_button01_green" ontouchstart=""><input type="file" id="pt_uploadBtn"
+                        accept="image/bmp"><label for="pt_uploadBtn">
+                        <div class="pt_button01_wrapper pt_button01_icon_link">
+                            <p class="c_typo_cta c_typo_WHT c_typo_align_center">アップロード</p>
+                            <div class="pt_button01_icon"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                                    class="pt_button01_icon_upload" focusable="false">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.0005 15.5501C11.0005 16.1001 11.4505 16.5501 12.0005 16.5501L11.9905 16.5401C12.5405 16.5401 12.9905 16.0901 12.9905 15.5401V6.39005L16.6705 9.30005C17.1005 9.65005 17.7305 9.57005 18.0705 9.14005C18.4205 8.71005 18.3405 8.08005 17.9105 7.74005L12.9805 3.84005C12.7105 3.62005 12.3705 3.49005 12.0205 3.49005H12.0105C11.6405 3.47005 11.2805 3.61005 10.9805 3.84005L6.07048 7.74005C5.64048 8.09005 5.57048 8.72005 5.91048 9.15005C6.26048 9.58005 6.89048 9.65005 7.32048 9.31005L11.0005 6.39005V15.5501ZM4.90039 20.5H19.1104C19.6604 20.5 20.1104 20.05 20.1104 19.5V14.76C20.1104 14.21 19.6604 13.76 19.1104 13.76C18.5604 13.76 18.1104 14.21 18.1104 14.76V18.5H5.90039V14.76C5.90039 14.21 5.45039 13.76 4.90039 13.76C4.35039 13.76 3.90039 14.21 3.90039 14.76V19.5C3.90039 20.05 4.35039 20.5 4.90039 20.5Z"
+                                        fill="#008673"></path>
+                                </svg></div>
+                        </div>
+                    </label></div>
+
+                <!-- 確定ボタン -->
+                <div class="c_button01 c_button01_green pt_hiddenFlg" id="pt_confirmBtn" ontouchstart=""><a
+                        href="javascript:void(0);">
+                        <div class="c_button01_wrapper c_button01_icon_not">
+                            <p class="c_typo_cta c_typo_WHT c_typo_align_center">確定</p>
+                        </div>
+                    </a></div>
+
+                <!-- キャンセルボタン -->
+                <div class="c_button01 c_button01_white pt_hiddenFlg" id="pt_cancelBtn" ontouchstart=""><a
+                        href="javascript:void(0);">
+                        <div class="c_button01_wrapper c_button01_icon_not">
+                            <p class="c_typo_cta c_typo_GRN10 c_typo_align_center">キャンセル</p>
+                        </div>
+                    </a></div>
+            </div>
+        </section>
+
+        <!-- 完了セクション -->
+        <section class="pt_completeSec pt_hiddenFlg">
+            <p>アップロード完了</p>
+        </section>
+    </main>
+
+    <!-- 共通JavaScript -->
+    <script src="../upload_files/p_css/event_MYEFXXXX.js"></script>
+    <!-- 画面個別JavaScript -->
+    <script src="../upload_files/p_css/script.js"></script>
+</body>
+
+</html>
