@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebP画像表示テスト｜プロトタイプ</title>
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="../upload_files/p_css/reset_MYEFXXXX.css">
+    <link rel="stylesheet" href="../upload_files/p_css/components_MYEFXXXX.css">
+    <!-- 画面個別CSS -->
+    <link rel="stylesheet" href="../upload_files/p_css/style2.css">
+    <style>
+       .pt_uploadSec {
+           padding: 24px 20px;
+       }
+
+       .pt_imgArea {
+           width: auto;
+           height: 200px;
+           text-align: center;
+       }
+
+       .pt_imgArea:not(:first-child) {
+           padding: 24px;
+       }
+    </style>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <p class="c_typo_headerM c_typo_BLK10 c_typo_align_center">WebP画像表示テスト｜プロトタイプ</p>
+    </header>
+
+    <!-- メイン -->
+    <main>
+        <!-- アップロードセクション -->
+        <section class="pt_uploadSec">
+            <div class="pt_imgArea">
+                <p class="c_typo_headerS c_typo_BLK10 c_typo_align_center">JPG画像</p>
+                <img src="../upload_files/IMG_3703.JPG?20240801" class="pt_uploadImg">
+            </div>
+            <div class="pt_imgArea">
+                <p class="c_typo_headerS c_typo_BLK10 c_typo_align_center">WebP画像</p>
+                <img src="../upload_files/IMG_3703.JPG?20240801" class="pt_uploadImg">
+            </div>
+        </section>
+    </main>
+
+    <!-- 共通JavaScript -->
+    <script src="../upload_files/p_css/event_MYEFXXXX.js"></script>
+</body>
+
+</html>
