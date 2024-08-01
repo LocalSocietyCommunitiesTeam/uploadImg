@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', function () {
                         console.log('url: ' + url);
 
                         // 画像表示要素のsrc属性を変更
-                        uploadBtn.src = url;
+                        uploadImg.src = url;
 
                         // キャンバスを非表示
                         canvas.classList.add('pt_hiddenFlg');
