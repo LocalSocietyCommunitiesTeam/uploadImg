@@ -23,13 +23,9 @@ window.addEventListener('DOMContentLoaded', function () {
                     const ctx = canvas.getContext('2d');
                     ctx.drawImage(img, 0, 0);
 
-                    const canvasArea = document.getElementById('pt_canvasArea');
-                    canvasArea.appendChild(canvas);
-
                     // WebP形式に変換
                     canvas.toBlob((blob) => {
-                        console.log('blob: ' + blob);
-
+                        
                         // 要素を取得
                         const uploadImg = document.getElementById('pt_uploadImg'); // アップロード画像
                         const uploadBtn = document.getElementById('pt_uploadBtn'); // アップロードボタン
@@ -38,13 +34,9 @@ window.addEventListener('DOMContentLoaded', function () {
                         
                         // BlobをURLに変換
                         const url = URL.createObjectURL(blob);
-                        console.log('url: ' + url);
-
+                        
                         // 画像表示要素のsrc属性を変更
                         uploadImg.src = url;
-
-                        // キャンバスを非表示
-                        canvas.classList.add('pt_hiddenFlg');
 
                         // ボタンの表示切り替え
                         uploadImg.classList.remove('pt_hiddenFlg');
